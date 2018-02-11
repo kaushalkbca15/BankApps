@@ -1,0 +1,240 @@
+1) Explian Your Project Arch?
+
+2)Tell me about Your Project?
+
+3)Explain about Layers used in your project?
+
+4)In which layer you are involed?
+
+5)What are technologies are used in your Project?
+
+6)Are your attended any meetings?
+If your attending then how much time ?
+
+7)Your Client name?
+
+8)What is your HR name ,
+ReportingManager Name and TL names etc...?
+
+
+9)How security is implemented in your project?
+
+
+10)What are the exceptions handled and avoided?
+
+
+11) How many modules are there in your project?
+
+
+12)How many roles (like admin,customer etc..)
+are there?
+
+13)How many tables are there?
+
+
+14)What is need of webservice for your project?
+
+
+15) Which implementation used from webservices?
+
+
+16)Total Duration of Your Project?
+
+
+17)What is scrum and scrum master?
+
+
+18)How the tasks are assigning ?
+
+19)What is sprint and story -points ?
+
+
+20)what is difference between
+agile and waterfall model?
+
+
+
+21) Sample Unit Test cases of Your Project?
+
+
+
+22)From Which Repository you are checkedout Project?
+(like SVN/CVS/GIT etc..)
+
+
+
+23)Some of Design Patterns 
+(DAO,Factory,AbstractFactory,
+Front-Controller,BussinessDelegate,VO,BO,Proxy,
+Facade,Command Object,ViewHelper,Singleton,
+ServiceLocator,Strategy )
+
+
+24)Questions On Tools (Maven,Junit,Log4j,SVN )
+
+****25) How to resolve the Confilicts in SVN ?
+
+26)svn/git term : Checkout,commit,update ?
+
+
+27) what is  trunk,branch,tags?
+
+
+28) What are the issues you are solved in your project?
+
+29) Tell me some problems you faced
+while developing the code?
+
+30)Where method overloading 
+and method overriding implemented in your project?
+
+31)Is your created any thread in your project?
+if created then what is need to create that Thread?
+
+32) any where synchronoziation is
+implemented in your  project?
+
+33)All the collection questions ?
+
+34) String,StringBuffer and string Builder questions?
+
+35) JSP + JSTL tags?
+
+36)What is Dependency Injection
+and why dependency inj?
+
+37) How many containers are there in spring?
+
+
+38) what is IOC?
+
+39) Spring Mvc flow and All
+the components of Spring MVC?
+
+40)Why we are using 
+with spring-boot and spring-batch?
+
+
+41) how to implement a cron job?
+
+42)what is difference between
+SOAP and Restfull webservices?
+
+43)Commons questions on Servlet,JSP and JDBC?
+
+
+44) What is difference between get and load() ?
+
+45) Questions HQL,criteria,Native-SQL?
+
+46)Caching tech'q question from Hibernate?
+
+47)Locking mechanism in Hibernate and DB?
+
+48)SessionFactory and Session in hibernate?
+
+49) HibernatTemplate is better (OR) Plain Hibernate API
+is better?
+
+50) How to increase JVM heap Size 
+and How to solve HeapOut of Memory Error?
+
+51) Connection Pooling realeated questions?
+
+52)Transatcion Management related questions?
+
+53) what is root resource and resource method?
+
+54)where we can use GET Where we can use POST?
+
+55)what is difference b.w QueryParameters
+,Path Parameters and matrix Parameters?
+
+56)What is difference b.w JSON and XML?
+
+57)write WSDL document?
+
+58)SOA (Service Oriented Arch) Arch?
+
+59)What is the difference Top-Down Approach
+and Bottom-Up Approach?
+
+60) How to create SEI in JAX-RPC And in JAX-Ws 
+Api App's?
+
+61) what is UDDI?
+
+62)What is Endpoint?
+63) What is Proxy(stub and skeleton)?
+64)what is MEP and MEF?
+
+65):- how create a variable in java script/jquery/angular js
+
+66)$scope,$http,$window,Angular js Directives
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

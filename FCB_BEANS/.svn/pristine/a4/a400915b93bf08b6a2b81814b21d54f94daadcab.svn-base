@@ -1,0 +1,308 @@
+package com.fcb.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name = "customer", schema = "FCBDB")
+public class Customer implements Serializable {
+	
+	
+	@Id
+	@Column(name = "customer_id")
+	@GeneratedValue(generator = "customerIdGenerator")
+	@GenericGenerator(name = "customerIdGenerator", strategy = "increment")
+	private Integer customerId;
+	
+	@Column(name = "first_name")
+	private String firstName;
+	@Column(name = "last_name")
+	private String lastName;
+	@Column(name = "father_name")
+	private String fatherName;
+	@Column(name = "gender")
+	private String gender;
+	@Column(name = "email")
+	private String email;
+	@Column(name = "dob")
+	private Date dob;
+	@Column(name = "mobile")
+	private String mobile;
+	@OneToOne
+	@JoinColumn(name = "present_address_id", unique = true)
+	private PresentAddress presentAddress;
+	@OneToOne
+	@JoinColumn(name = "permanent_address_id", unique = true)
+	private PermanentAddress permanentAddress;
+	
+	@OneToOne
+	@JoinColumn(name = "ID_PROOF_ID", unique = true)
+	private IdentificationProof identificationProof;
+	@OneToOne
+	@JoinColumn(name = "address_proof_id", unique = true)
+	private AddressProof addressProof;
+	@OneToOne
+	@JoinColumn(name = "other_card_id", unique = true)
+	private OtherIdCard otherIdCard;
+	@Column(name = "customer_Sign")
+	private byte[] customerSign;
+	@Column(name = "customer_Photo")
+	private byte[] customerPhoto;
+	@OneToOne
+	@JoinColumn(name = "nominee_id", unique = true)
+	private Nominee nominee;
+      @OneToOne(mappedBy="customer",fetch=FetchType.LAZY)
+	 private Account account;
+	
+	/**
+	 * @return the customerId
+	 */
+	public Integer getCustomerId() {
+		return customerId;
+	}
+
+	/**
+	 * @param customerId
+	 *            the customerId to set
+	 */
+	public void setCustomerId(Integer customerId) {
+		this.customerId = customerId;
+	}
+
+	/**
+	 * @return the firstName
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
+
+	/**
+	 * @param firstName
+	 *            the firstName to set
+	 */
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	/**
+	 * @return the lastName
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+	/**
+	 * @param lastName
+	 *            the lastName to set
+	 */
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	/**
+	 * @return the fatherName
+	 */
+	public String getFatherName() {
+		return fatherName;
+	}
+
+	/**
+	 * @param fatherName
+	 *            the fatherName to set
+	 */
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
+	}
+
+	/**
+	 * @return the gender
+	 */
+	public String getGender() {
+		return gender;
+	}
+
+	/**
+	 * @param gender
+	 *            the gender to set
+	 */
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * @param email
+	 *            the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * @return the dob
+	 */
+	public Date getDob() {
+		return dob;
+	}
+
+	/**
+	 * @param dob
+	 *            the dob to set
+	 */
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	/**
+	 * @return the mobile
+	 */
+	public String getMobile() {
+		return mobile;
+	}
+
+	/**
+	 * @param mobile
+	 *            the mobile to set
+	 */
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	/**
+	 * @return the presentAddress
+	 */
+	public PresentAddress getPresentAddress() {
+		return presentAddress;
+	}
+
+	/**
+	 * @param presentAddress
+	 *            the presentAddress to set
+	 */
+	public void setPresentAddress(PresentAddress presentAddress) {
+		this.presentAddress = presentAddress;
+	}
+
+	/**
+	 * @return the permanentAddress
+	 */
+	public PermanentAddress getPermanentAddress() {
+		return permanentAddress;
+	}
+
+	/**
+	 * @param permanentAddress
+	 *            the permanentAddress to set
+	 */
+	public void setPermanentAddress(PermanentAddress permanentAddress) {
+		this.permanentAddress = permanentAddress;
+	}
+
+	/**
+	 * @return the identificationProof
+	 */
+	public IdentificationProof getIdentificationProof() {
+		return identificationProof;
+	}
+
+	/**
+	 * @param identificationProof
+	 *            the identificationProof to set
+	 */
+	public void setIdentificationProof(IdentificationProof identificationProof) {
+		this.identificationProof = identificationProof;
+	}
+
+	/**
+	 * @return the addressProof
+	 */
+	public AddressProof getAddressProof() {
+		return addressProof;
+	}
+
+	/**
+	 * @param addressProof
+	 *            the addressProof to set
+	 */
+	public void setAddressProof(AddressProof addressProof) {
+		this.addressProof = addressProof;
+	}
+
+	/**
+	 * @return the otherIdCard
+	 */
+	public OtherIdCard getOtherIdCard() {
+		return otherIdCard;
+	}
+
+	/**
+	 * @param otherIdCard
+	 *            the otherIdCard to set
+	 */
+	public void setOtherIdCard(OtherIdCard otherIdCard) {
+		this.otherIdCard = otherIdCard;
+	}
+
+	/**
+	 * @return the customerSign
+	 */
+	public byte[] getCustomerSign() {
+		return customerSign;
+	}
+
+	/**
+	 * @param customerSign
+	 *            the customerSign to set
+	 */
+	public void setCustomerSign(byte[] customerSign) {
+		this.customerSign = customerSign;
+	}
+
+	/**
+	 * @return the customerPhoto
+	 */
+	public byte[] getCustomerPhoto() {
+		return customerPhoto;
+	}
+
+	/**
+	 * @param customerPhoto
+	 *            the customerPhoto to set
+	 */
+	public void setCustomerPhoto(byte[] customerPhoto) {
+		this.customerPhoto = customerPhoto;
+	}
+
+	/**
+	 * @return the nominee
+	 */
+	public Nominee getNominee() {
+		return nominee;
+	}
+
+	/**
+	 * @param nominee
+	 *            the nominee to set
+	 */
+	public void setNominee(Nominee nominee) {
+		this.nominee = nominee;
+	}
+
+}

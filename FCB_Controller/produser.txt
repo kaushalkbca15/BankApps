@@ -1,0 +1,20 @@
+CREATE OR REPLACE  PROCEDURE withdrawa_proc(account_no_in IN NUMBER,
+                                             bal_in IN NUMBER)
+IS
+  current_balance number;
+BEGIN
+  select ACCOUNT_BALANCE
+    into current_balance
+    from Account
+    where Account_Number = account_no_in;
+
+  if current_balance < bal_in then
+   dbms_output.put_line('The amount entered is more than the amount balance');
+  else
+    update ACCOUNT
+      set ACCOUNT_BALANCE= bal_in - current_balance
+      where ACCOUNT_NUMBER = account_no_in;
+  end if; 
+  dbms_output.put_line('Money has been withdrawn successfully');
+END;
+

@@ -1,0 +1,39 @@
+   CBA DB:-
+   ===========
+   Tables:-
+   -------
+   1)Bank
+   2)Branch
+   3)AccountsType
+   4)DepositsType
+   5)LoansType
+   6)CardType
+   7)Card
+   8)Employee
+   9)UserAuthentication
+   10)Account
+   11)Customer
+   12)KYC
+   13)Loan
+   14)Currency
+   15)Offers
+   16)Account_transactions
+   17)CustomerEnquiry
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
